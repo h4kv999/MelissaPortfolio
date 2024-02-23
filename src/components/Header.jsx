@@ -16,7 +16,7 @@ export function Header(){
                 </div>
             </div>
             <div className="flex flex-col items-center mt-8">
-                <img src={ images.icon } alt="icon" className="w-40 rounded-sm"/>
+                <img src={ images.icon } alt="icon" className="w-48 rounded-md max-md:w-40"/>
                 <h1 className="text-9xl max-md:text-8xl text-pink-400 font-bold uppercase">melissa</h1>
                 <p className="text-purple-100">A spooky illustrator</p>
             </div>
