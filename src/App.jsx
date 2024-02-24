@@ -1,17 +1,30 @@
 import { Header } from "./components/Header";
-import { Main } from "./components/Main";
+import { Artwork } from "./components/Artwork";
 import { Divider } from "./components/Divider";
-import { Nav } from "./components/Nav";
 import { Card } from "./components/Card";
+import { Route, BrowserRouter as Router, Link, Routes } from "react-router-dom";
+import { About } from "./components/About";
+import { BooksArt } from "./components/BooksArt";
 
 export function App() {
   return (
     <div className="bg-zinc-800 max-w-[1280px] m-auto font-spaceMono flex flex-col gap-4 p-4">
-      <Header/>
-      <Divider/>
-      <Card/>
-      <Nav/>
-      <Main/>
+      <Router>
+        <Header/>
+        <Divider/>
+        <Card/>
+        <div className="h-11 flex items-center justify-center gap-7 text-purple-100 mt-6 sticky top-0">
+          <Link to="/" className="hover:text-purple-500 transition flex items-center gap-2">Artwork</Link>
+          <Link to="/about" className="hover:text-purple-500 transition flex items-center gap-2">About Me</Link>
+          <Link to="/books-art" className="hover:text-purple-500 transition flex items-center gap-2">Books Art</Link>
+        </div>
+
+        <Routes>
+            <Route path="/" element={ <Artwork/> }/>
+            <Route path='/about' element={ <About/> }></Route>
+            <Route path='/books-art' element={ <BooksArt/> }></Route>
+        </Routes>
+      </Router>
     </div>
   )
 }
