@@ -1,4 +1,4 @@
-import { images } from "../../public/assets";
+import { images } from "../../public/assets/index.js";
 import { FaInstagram } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 
