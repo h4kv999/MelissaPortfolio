@@ -1,5 +1,10 @@
+import { Fragment } from "react";
+import { Headline } from "./Headline";
+
 export function BooksArt(){
     return(
-        <h1>books</h1>
+        <Fragment>
+            <Headline text="books art"/>
+        </Fragment>
     )
 }

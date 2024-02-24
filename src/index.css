@@ -6,4 +6,22 @@
     body {
       @apply bg-black
     }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #27272A;
+    }
+    
+
+    ::-webkit-scrollbar-thumb {
+      background: #F3E8FF;
+      border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8B5CF6;
+    }
   }

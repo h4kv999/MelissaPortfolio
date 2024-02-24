@@ -1,5 +1,13 @@
+import { Fragment } from "react";
+import { Headline } from "./Headline";
+
 export function About(){
     return(
-        <h1>about</h1>
+        <Fragment>
+            <Headline text="about"/>
+            <div>
+                
+            </div>
+        </Fragment>
     )
 }

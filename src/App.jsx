@@ -13,11 +13,13 @@ export function App() {
         <Header/>
         <Divider/>
         <Card/>
-        <div className="h-11 flex items-center justify-center gap-7 text-purple-100 mt-6 sticky top-0">
+        <div className="h-11 bg-opacity-40 flex items-center justify-center gap-7 z-10 text-purple-100 font-semibold mt-6 sticky top-0 bg-zinc-800">
           <Link to="/" className="hover:text-purple-500 transition flex items-center gap-2">Artwork</Link>
           <Link to="/about" className="hover:text-purple-500 transition flex items-center gap-2">About Me</Link>
           <Link to="/books-art" className="hover:text-purple-500 transition flex items-center gap-2">Books Art</Link>
         </div>
+
+
 
         <Routes>
             <Route path="/" element={ <Artwork/> }/>
