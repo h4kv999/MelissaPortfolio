@@ -4,6 +4,7 @@ export const images = {
     hero: './assets/hero.jpg',
     melissaIcon: './assets/melissaIcon.jpg',
     contactImg: './assets/contactImg.jpg',
+    thanksImg: './assets/thanksImg.jpg',
     gallery: {
         img1: './assets/img1.jpg',
         img2: './assets/img2.jpg',
@@ -14,10 +15,5 @@ export const images = {
         img7: './assets/img7.jpg',
         img8: './assets/img8.jpg',
         img9: './assets/img9.jpg'
-    },
-    art_book: {
-        art1: './assets/art-book1.jpg',
-        art2: './assets/art-book2.jpg',
-        art3: './assets/art-book3.jpg',
     }
 }

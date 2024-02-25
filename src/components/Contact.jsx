@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Headline } from "./Headline";
 import { images } from "../../public/assets";
+import { Thanks } from "./Thanks";
 
 export function Contact(){
     return(
@@ -23,11 +24,13 @@ export function Contact(){
                     <textarea placeholder="Your message here" name="message" required className="p-2 outline-none rounded-md resize-none bg-purple-100 h-48 text-zinc-800"></textarea>
                 </div>
                 
-                <button type="submit" className="p-4 border text-purple-100 rounded-md hover:bg-purple-100 hover:text-zinc-800 transition">submit</button>
-
                 <input type="hidden" name="_subject" value="New Contact"/>
                 <input type="text" name="_honey" className="hidden"/>
                 <input type="hidden" name="_captcha" value="false"/>
+
+                <button type="submit" className="p-4 border text-purple-100 rounded-md hover:bg-purple-100 hover:text-zinc-800 transition">submit</button>
+                <input type="hidden" name="_next" value="https://melissa-portfolio-six.vercel.app/thanks"/>
+
                 </form>
                 <div className="w-72">
                     <img src={ images.contactImg } className="h-full object-cover rounded-md" alt=""/>
