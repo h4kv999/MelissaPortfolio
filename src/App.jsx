@@ -4,7 +4,7 @@ import { Divider } from "./components/Divider";
 import { Card } from "./components/Card";
 import { Route, BrowserRouter as Router, Link, Routes } from "react-router-dom";
 import { About } from "./components/About";
-import { BooksArt } from "./components/BooksArt";
+import { Contact } from "./components/Contact";
 
 export function App() {
   return (
@@ -16,7 +16,7 @@ export function App() {
         <div className="h-11 bg-opacity-40 flex items-center justify-center gap-7 z-10 text-purple-100 font-semibold mt-6 sticky top-0 bg-zinc-800">
           <Link to="/" className="hover:text-purple-500 transition flex items-center gap-2">Artwork</Link>
           <Link to="/about" className="hover:text-purple-500 transition flex items-center gap-2">About Me</Link>
-          <Link to="/books-art" className="hover:text-purple-500 transition flex items-center gap-2">Books Art</Link>
+          <Link to="/contact" className="hover:text-purple-500 transition flex items-center gap-2">Contact</Link>
         </div>
 
 
@@ -24,7 +24,7 @@ export function App() {
         <Routes>
             <Route path="/" element={ <Artwork/> }/>
             <Route path='/about' element={ <About/> }></Route>
-            <Route path='/books-art' element={ <BooksArt/> }></Route>
+            <Route path='/contact' element={ <Contact/> }></Route>
         </Routes>
       </Router>
     </div>
