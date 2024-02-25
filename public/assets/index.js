@@ -3,6 +3,7 @@ export const images = {
     icon: './assets/icon.webp',
     hero: './assets/hero.jpg',
     melissaIcon: './assets/melissaIcon.jpg',
+    contactImg: './assets/contactImg.jpg',
     gallery: {
         img1: './assets/img1.jpg',
         img2: './assets/img2.jpg',

@@ -1,11 +1,13 @@
 import { Fragment } from "react";
 import { Headline } from "./Headline";
+import { images } from "../../public/assets";
 
 export function Contact(){
     return(
         <Fragment>
             <Headline text="contact"/>
-            <form action="https://formsubmit.co/byilustrapanencomendas@gmail.com" method="POST" className="flex flex-col gap-4">
+            <div className="flex gap-4 border border-purple-100 p-4 rounded-md">
+                <form action="https://formsubmit.co/byilustrapanencomendas@gmail.com" method="POST" className="flex flex-col gap-4 w-full">
                 <div className="w-full flex flex-col">
                     <label className="text-purple-100">Name:</label>
                     <input placeholder="Your name here" name="name" type="text" required className="p-2 outline-none rounded-md bg-purple-100 text-zinc-800"/>
@@ -26,7 +28,11 @@ export function Contact(){
                 <input type="hidden" name="_subject" value="New Contact"/>
                 <input type="text" name="_honey" className="hidden"/>
                 <input type="hidden" name="_captcha" value="false"/>
-            </form>
+                </form>
+                <div className="w-72">
+                    <img src={ images.contactImg } className="h-full object-cover rounded-md" alt=""/>
+                </div>
+            </div>
         </Fragment>
     )
 }
