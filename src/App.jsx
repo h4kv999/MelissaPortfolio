@@ -7,10 +7,11 @@ import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Thanks } from "./components/Thanks";
 import { Cards } from "./components/Cards";
+import { Footer } from "./components/Footer";
 
 export function App() {
   return (
-    <div className="bg-zinc-800 max-w-[1280px] m-auto font-spaceMono flex flex-col gap-4 p-4">
+    <div className="bg-zinc-800 max-w-[1280px] m-auto font-spaceMono flex flex-col gap-4 p-4 border-x border-purple-100 border-opacity-10">
       <Router>
         <Header/>
         <Divider/>
@@ -29,6 +30,7 @@ export function App() {
         </Routes>
         <Divider/>
         <Cards/>
+        <Footer/>
       </Router>
     </div>
   )
