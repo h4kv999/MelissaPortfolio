@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import { Headline } from "./Headline";
 import { images } from "../../public/assets";
-import { Thanks } from "./Thanks";
 
 export function Contact(){
     return(

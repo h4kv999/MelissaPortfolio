@@ -10,6 +10,8 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@xpd/tailwind-3dtransforms")
+  ],
 }
 

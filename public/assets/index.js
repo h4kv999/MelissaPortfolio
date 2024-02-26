@@ -15,5 +15,10 @@ export const images = {
         img7: './assets/img7.jpg',
         img8: './assets/img8.jpg',
         img9: './assets/img9.jpg'
+    },
+    cards: {
+        card1: './assets/card1.png',
+        card2: './assets/card2.png',
+        card3: './assets/card3.png'
     }
 }

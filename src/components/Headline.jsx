@@ -1,6 +1,5 @@
 import { FaSkull } from "react-icons/fa6";
 
-
 export function Headline(props){
     return(
         <div className="flex items-center justify-center gap-2">

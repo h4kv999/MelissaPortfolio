@@ -1,6 +1,6 @@
 import { images } from "../../public/assets";
 
-export function Card(){
+export function Resume(){
     return(
         <div className="flex items-center flex-col">
             <div className="flex flex-wrap justify-around border border-purple-100 rounded-md w-full p-4">
