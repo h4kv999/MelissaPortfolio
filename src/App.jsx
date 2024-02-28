@@ -8,15 +8,31 @@ import { Contact } from "./components/Contact";
 import { Thanks } from "./components/Thanks";
 import { Cards } from "./components/Cards";
 import { Footer } from "./components/Footer";
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 
 export function App() {
+  useGSAP(() => {
+    gsap.fromTo(".links", {
+        opacity: 0,
+        y: -40
+    },
+    {
+        opacity: 1,
+        y: 0,
+        duration: 2,
+        delay: 2,
+        ease: "power3.inOut"
+    });
+})
+
   return (
     <div className="bg-zinc-800 max-w-[1280px] m-auto font-spaceMono flex flex-col gap-4 p-4 border-x border-purple-100 border-opacity-10">
       <Router>
         <Header/>
         <Divider/>
         <Resume/>
-        <div className="h-11 bg-opacity-40 flex items-center justify-center gap-7 z-10 text-purple-100 font-semibold mt-6 sticky top-0 bg-zinc-800">
+        <div className="links h-11 bg-opacity-40 flex items-center justify-center gap-7 z-10 text-purple-100 font-semibold mt-6 sticky top-0 bg-zinc-800">
           <Link to="/" className="hover:text-purple-500 transition flex items-center">Artwork</Link>
           <Link to="/about" className="hover:text-purple-500 transition flex items-center">About Me</Link>
           <Link to="/contact" className="hover:text-purple-500 transition flex items-center">Contact</Link>
