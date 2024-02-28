@@ -1,9 +1,6 @@
 import { Headline } from "./Headline";
 import { images } from "../../public/assets";
 import { Fragment } from "react";
-import { RiEyeCloseLine } from "react-icons/ri";
-import { FaRegMoon, FaRegSun } from "react-icons/fa";
-import { GoDotFill } from "react-icons/go";
 import { Card } from "./Card";
 
 export function Cards(){
