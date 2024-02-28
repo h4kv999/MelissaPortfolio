@@ -5,7 +5,7 @@ import { GoDotFill } from "react-icons/go";
 export function Card(props){
     return(
         <div className="group h-[482px] w-[270px] perspective-1000">
-                    <div className="relative h-full w-full transition-all duration-500 transform-style-3d group-hover:[transform:rotateY(179.9deg)] group-hover:[-webkit-transform:rotateY(179.9deg)]">
+                    <div className="relative h-full w-full transition-all duration-500 transform-style-3d [-webkit-transform-style: preserve-3d: ]group-hover:[transform:rotateY(179.9deg)] group-hover:[-webkit-transform:rotateY(179.9deg)]">
                         <div className="absolute inset-0 h-full">
                             <div className="w-full h-full object-cover p-4 rounded-md border border-purple-100 border-opacity-25">
                                 <div className="w-full p-4 h-full border bg-zinc-800 flex items-center justify-center border-opacity-75 border-purple-100 rounded-md">
@@ -25,7 +25,7 @@ export function Card(props){
                                 </div>
                             </div>
                         </div>
-                        <div className="absolute inset-0 h-full w-full text-center p-1 rounded-md [transform:rotateY(180deg)] backface-hidden ">
+                        <div className="absolute inset-0 h-full w-full text-center p-1 rounded-md [transform:rotateY(180deg)] [-webkit-transform:rotateY(180deg)] backface-hidden ">
                             <img src={ props.image } className="w-full h-full object-cover rounded-md" alt="" />
                         </div>
                     </div>
