@@ -1,6 +1,6 @@
 <h1 align="center">MELISSA PORTFOLIO</h1>
 
-<h6 align="center">Melissa's portfolio is a visual testament to her extraordinary artistic journey. Each work is more than a simple representation </br> Is a visual narrative that captures the unique essence of your creative expression. </h6>
+<h6 align="center">Melissa's portfolio is a visual testament to her extraordinary artistic journey. Each work is more than a simple representation, </br> is a visual narrative that captures the unique essence of your creative expression. </h6>
 
 ![image 1](https://github.com/itsV1tor/MelissaPortfolio/assets/121408231/cfc798b1-713c-40e9-960d-d1bd07d70b7e)
 
